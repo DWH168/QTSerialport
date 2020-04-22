@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Serialport</class>
+ <widget class="QWidget" name="Serialport">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>串口通信助手（ 微信公众号：智慧小巷 ）</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>191</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>串口设置</string>
+   </property>
+   <widget class="QWidget" name="set_seria" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>181</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <widget class="QComboBox" name="StopBit_cbx">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>131</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>131</y>
+       <width>36</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>停止位</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>94</y>
+       <width>36</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>校验位</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="CheckBit_cbx">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>94</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>57</y>
+       <width>36</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>数据位</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="DataBit_cbx">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>57</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>20</y>
+       <width>36</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>波特率</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="Bound_cbx">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>20</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>StopBit_cbx</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_4</zorder>
+    <zorder>CheckBit_cbx</zorder>
+    <zorder>label_3</zorder>
+    <zorder>DataBit_cbx</zorder>
+    <zorder>label_2</zorder>
+    <zorder>Bound_cbx</zorder>
+    <zorder>widget</zorder>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>9</y>
+       <width>24</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>端口</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="search_btn">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>10</y>
+       <width>41</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>扫描</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="cbx_port">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>search_btn</zorder>
+    <zorder>search_btn</zorder>
+    <zorder>label</zorder>
+    <zorder>label</zorder>
+    <zorder>search_btn</zorder>
+    <zorder>cbx_port</zorder>
+   </widget>
+   <widget class="QPushButton" name="open_btn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开串口</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="claer_btn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>260</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清空</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ckb_hex_send">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>HEX发送</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="ckb_hex_show">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>300</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>HEX显示</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>209</x>
+     <y>9</y>
+     <width>351</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>接收区</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTextEdit" name="re_edit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>551</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>发送区</string>
+   </property>
+   <widget class="QTextEdit" name="send_edit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>421</width>
+      <height>61</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="send_btn">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>30</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>search_btn</zorder>
+  <zorder>groupBox_2</zorder>
+  <zorder>groupBox_3</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
